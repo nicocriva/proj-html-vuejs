@@ -1,6 +1,13 @@
 <template>
-  <div>
-
+  <div class="jumbo-sub">
+    jumbo subscribe
+    <div>
+      <!-- titolo -->
+    </div>
+    <div>
+      <!-- sottotitolo -->
+    </div>
+    <!-- form -->
   </div>
 </template>
 
@@ -11,5 +18,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.jumbo-sub{
+  height: 350px;
+  background-color: #01171d;
+
+}
 
 </style>

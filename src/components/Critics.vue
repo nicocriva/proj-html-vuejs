@@ -1,6 +1,23 @@
 <template>
-  <div>
-
+  <div class="critics-section">
+    articles
+    <div class="critics-header">
+      <div>
+        <!-- title -->
+      </div>
+      <div>
+        <!-- button -->
+      </div>
+    </div>
+    <article>
+      <!-- art1 -->
+    </article>
+    <article>
+      <!-- art2 -->
+    </article>
+    <article>
+      <!-- art3 -->
+    </article>
   </div>
 </template>
 
@@ -11,5 +28,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.critics-section{
+  height: 800px;
+}
 
 </style>
