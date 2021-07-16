@@ -16,12 +16,12 @@
           </ul>
         </div>
       </div>
-      <div class="header-bottom">
-        <div>
-          <!-- left content -->
+      <div class="header-bottom w-100 position-relative">
+        <div class="btm-left position-absolute">
+          testo
         </div>
-        <div>
-          <!-- latest book -->
+        <div class="btm-right position-absolute">
+          ultimo libro
         </div>
       </div>
     </div>
@@ -68,6 +68,27 @@ header{
           color: #edaf29;     
           border-top: 5px solid #edaf29;
         }
+      }
+    }
+
+    .header-bottom{
+      height: calc(100vh - 120px);
+
+      .btm-left{
+        width: 600px;
+        height: 400px;
+        bottom: 100px;
+        left: 150px;
+        background-color: #edaf2981;;
+      }
+
+      .btm-right{
+        width: 600px;
+        height: 300px;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(255, 255, 255, 0.5);
+
       }
     }
   }
