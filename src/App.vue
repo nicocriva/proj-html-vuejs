@@ -47,5 +47,7 @@ export default {
 <style lang="scss">
 @import 'bootstrap';
 @import './style/commons.scss';
+@import 'style/vars.scss';
+@import url('https://fonts.googleapis.com/css2?family=Kristi&display=swap');
 
 </style>
