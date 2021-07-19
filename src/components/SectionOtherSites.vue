@@ -1,6 +1,9 @@
 <template>
-  <div class="sites">
-      web sites logo
+  <div class="sites d-flex align-items-center justify-content-center">
+      <a href="#"><img src="../assets/ebay-logotan-2x.png" alt="Ebay logo"></a>
+      <a href="#"><img src="../assets/audible-logotan-2x.png" alt="Audible logo"></a>
+      <a href="#"><img src="../assets/bb-logotan-2x.png" alt="Barnes and Nobles logo"></a>
+      <a href="#"><img src="../assets/kindlefire-logotan-2x.png" alt="Kindle logo"></a>
   </div>
 </template>
 
@@ -13,7 +16,17 @@ export default {
 <style lang="scss" scoped>
 .sites{
   height: 150px;
-  background-color: #fef7e9;
+  background-color: #f3ece3;
+  padding-bottom: 10px;
+
+  a{
+    margin: 0 20px;
+
+    img{
+      width: 200px;
+    }
+  } 
+  
 }
 
 </style>
