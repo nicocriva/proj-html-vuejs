@@ -14,9 +14,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../style/vars.scss';
+
 .sites{
   height: 150px;
-  background-color: #f3ece3;
+  background-color: $light-background;
   padding-bottom: 10px;
 
   a{
