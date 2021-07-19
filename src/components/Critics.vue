@@ -1,20 +1,20 @@
 <template>
-  <div class="critics-section container">
+  <div class="critics-section container px-4 overflow-hidden">
     <div class="critics-header d-flex align-items-center justify-content-between">
       <div>
         <h2 class="title font-times">What The Critics Say</h2>
-        <div class="subtitle text-uppercase">Testimonial From Around The World</div>
+        <div class="subtitle  text-uppercase">Testimonial From Around The World</div>
       </div>
       <div>
         <button class="border-0 rounded text-white">Read All Testimonial</button>
       </div>
     </div>
     <div class="articles mt-4">
-      <article class="art1 text-white">
-        <div class="img-shadow">
+      <article class="art1 float-start text-white">
+        <div class="img-shadow w-100 h-100">
           <h2 class="title font-times text-bold"> Best Author Of His Generation </h2>
           <hr>
-          <h5 class="subtitle">This book will change yoru perspective on life</h5>
+          <h5 class="subtitle my-4">This book will change yoru perspective on life</h5>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi culpa sequi architecto eaque eligendi quibusdam laborum labore ut unde eum magni iste error perspiciatis praesentium harum, ex soluta veniam dicta?</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quaerat sint temporibus reprehenderit est sequi eum reiciendis eius ad excepturi? Facere ad id quod? Necessitatibus!</p>
           <div class="mt-5">
@@ -23,12 +23,25 @@
           </div>
         </div>
       </article>
-      <article class="art2 text-center">
-        <h5 class="title font-times fs-4">A True Masterpiece, Bravo!</h5>
-        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, provident quam tempore animi iusto voluptas modi dignissimos impedit deleniti aut! Minima tenetur quo commodi et ipsam magnam, maxime natus excepturi facere quas quis laudantium facilis corrupti! Dolorum corrupti aperiam voluptatem tenetur modi voluptate quos natus doloribus neque nostrum, illum, quo temporibus tempore porro quaerat!</p>
+      <article class="art2 float-end">
+        <div class="article-content text-center mb-2">
+          <h5 class="title font-times fs-4">A True Masterpiece, Bravo!</h5>
+          <p class="mx-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, provident quam tempore animi iusto voluptas modi dignissimos impedit deleniti aut! Minima tenetur quo commodi et ipsam magnam, facilis corrupti! Dolorum porro quaerat!</p>
+        </div>
+        <div class="mb-5">
+          <img src="../assets/theguardian-xsmall.png" alt="The Guardian logo">
+          <div class="ms-4 d-inline-block text-secondary fw-bold  ">Gerald Hendley, <span class="text-dark fw-normal">The Guardian</span></div>
+        </div>
       </article>
-      <article class="art3">
-        art3
+      <article class="art3 float-end">
+        <div class="article-content text-center mb-2">
+          <h5 class="title font-times fs-4">A Unique View On The World</h5>
+          <p class="mx-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, provident quam tempore animi iusto voluptas modi dignissimos impedit deleniti aut! Minima tenetur quo commodi et ipsam magnam, quos natus doloribus neque nostrum, illum, quo temporibus tempore porro quaerat!</p>
+        </div>
+        <div>
+          <img src="../assets/globe-xsmall.png" alt="The Guardian logo">
+          <div class="ms-4 d-inline-block text-secondary fw-bold  ">Mary Maxey, <span class="text-dark fw-normal">The Globe And Mail</span></div>
+        </div>
       </article>
     </div>
   </div>
@@ -49,7 +62,6 @@ export default {
   padding: 50px 0 100px 0;
 
   .critics-header{
-    width: 100%;
 
     .title{
       font-weight: 600;
@@ -76,34 +88,27 @@ export default {
 
   .articles{
     height: calc(100% - 100px);
-    width: 100%;
-
-    .art2, .art3{
-      float: right;
-    }
 
     .art1{
       width: 60%;
       height: 90%;
-      float: left;
       background-image: url('../assets/testimonial2-2x.jpg');
       background-size: cover;
       border-radius: 0 0 80px 0;
+      transition: 0.3s;
+
+      &:hover{
+        transform: scale(1.03);
+      }
 
       .img-shadow{
-        width: 100%;
-        height: 100%;
         background-color: rgba(0, 0, 0, 0.2);
         border-radius: 0 0 80px 0;
         padding: 90px;
-      
+        
         .title{
           font-weight: 600;
           font-size: 40px;
-        }
-
-        .subtitle{
-          margin: 30px 0;
         }
 
         hr{
@@ -113,28 +118,24 @@ export default {
 
         .article-author{
           color: $title-tiffany;
-
         }
       }
-
     }
+
 
     .art2, .art3{
       width: 35%;
-      padding: 30px;
-      // background-color: darkgoldenrod;
     }
 
-    .art2{
-      margin-bottom: 30px;
-      background-color: $light-background;
+    .article-content{
+      padding: 30px;
+      background-color: $light-background;  
       
       .title{
         font-weight: 600;
       }
 
       p{
-        // font-size: 18px;
         line-height: 1.6;
         color: rgba(0, 0, 0, 0.65);
       }
