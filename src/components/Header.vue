@@ -31,9 +31,9 @@
           <div class="float-start w-50 mt-2">
             <div class="latest-book font-times mb-2 fs-4">Latest Book Release</div>
             <div class="latest-book-name color-yellow">D: VAUGHN AUTOBIOGRAPHY</div>
-            <div class="latest-book-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae sit incidunt quasi nam, velit praesentium?</div>
+            <div class="latest-book-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae sit incidunt quasi nam.</div>
           </div>
-          <div class="buy-buttons w-100">
+          <div class="buy-buttons rounded w-100">
             <button class="w-50 float-start"> <i class="fab fa-amazon"></i> Buy On Amazon</button>
             <button class="w-50 float-start"> <i class="fab fa-apple"></i> Buy On AppStore</button>
             <!-- <div class="w-50 float-start">amazon</div>
@@ -100,12 +100,12 @@ header{
         left: 150px;
 
         h2{
-          font-size: 85px;
+          font-size: 80px;
           color: $title-yellow;
         }
 
         .quote{
-          font-size: 40px;
+          font-size: 35px;
           font-weight: bold;
         }
 
@@ -150,7 +150,7 @@ header{
       }
 
       .btm-right{
-        width: 550px;
+        width: 35%;
         height: 350px;
         padding: 40px 50px;
         bottom: 0;
@@ -177,7 +177,6 @@ header{
         .buy-buttons {
           width: 100%;
           line-height: 30px;
-          border-radius: 5px;
           display: table;
           clear: both;
           content: '';
