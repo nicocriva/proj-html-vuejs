@@ -42,12 +42,12 @@ export default {
     margin: 30px 0;
     border: none;
     padding: 10px 15px;
-    background-color: #49a987;
+    background-color: $title-tiffany;
     transition: 0.2s;
 
 
     &:hover{
-      background-color: #357f60;;
+      background-color: #297268;
     }
   }
 }
