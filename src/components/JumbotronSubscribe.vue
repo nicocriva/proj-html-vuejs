@@ -1,13 +1,16 @@
 <template>
   <div class="jumbo-sub text-center">
+    <!-- dark jumbo shadow  -->
     <div class="jumbo-shadow">
       <div class="container py-5">
-        <div class="title font-times mt-4 text-white">
+        <!-- title -->
+        <div class="title font-times pt-1 mt-4 text-white">
           Subscribe To My Newsletter
         </div>
         <div class="subtitle text-uppercase">
           be notified about book signing tour dates
         </div>
+        <!-- form -->
         <form action="">
           <input class="p-2 rounded border-0 mx-2" type="email" placeholder="Inserisci la tua mail">
           <button class="p-2 px-5 rounded border-0 text-white">Subscribe</button>
@@ -39,7 +42,6 @@ export default {
     width: 35%;
 
     .title{
-      padding-top: 10px;
       font-size: 35px;
       font-weight: 500;
     }
@@ -55,7 +57,7 @@ export default {
     form{
       button{
         background-color: $title-tiffany;
-  
+
         &:hover{
           background-color: #297268;
         }
@@ -68,7 +70,6 @@ export default {
     }
   }
   
-
 }
 
 </style>

@@ -1,17 +1,22 @@
 <template>
-  <div class="critics-section container px-4 overflow-hidden">
+  <div class="critics-section w-75 container px-4 overflow-hidden">
     <div class="critics-header d-flex align-items-center justify-content-between">
       <div>
+        <!-- title -->
         <h2 class="title font-times">What The Critics Say</h2>
         <div class="subtitle  text-uppercase">Testimonial From Around The World</div>
       </div>
+      <!-- button -->
       <div>
         <button class="border-0 rounded text-white">Read All Testimonial</button>
       </div>
     </div>
+    <!-- articles section -->
     <div class="articles mt-4">
+      <!-- first article -->
       <article class="art1 float-start text-white">
         <div class="img-shadow w-100 h-100">
+          <!-- article text -->
           <h2 class="title font-times text-bold"> Best Author Of His Generation </h2>
           <hr>
           <h5 class="subtitle my-4">This book will change yoru perspective on life</h5>
@@ -23,22 +28,26 @@
           </div>
         </div>
       </article>
+      <!-- second article -->
       <article class="art2 float-end">
-        <div class="article-content text-center mb-2">
+        <div class="article-content p-4 text-center mb-2">
+          <!-- article text -->
           <h5 class="title font-times fs-4">A True Masterpiece, Bravo!</h5>
           <p class="mx-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, provident quam tempore animi iusto voluptas modi dignissimos impedit deleniti aut! Minima tenetur quo commodi et ipsam magnam, facilis corrupti! Dolorum porro quaerat!</p>
         </div>
-        <div class="mb-5">
+        <div class="mb-5 pt-2">
           <img src="../assets/theguardian-xsmall.png" alt="The Guardian logo">
           <div class="ms-4 d-inline-block text-secondary fw-bold  ">Gerald Hendley, <span class="text-dark fw-normal">The Guardian</span></div>
         </div>
       </article>
-      <article class="art3 float-end">
-        <div class="article-content text-center mb-2">
+      <!-- third article -->
+      <article class="art3 mt-2 float-end">
+        <div class="article-content p-4 text-center mb-2">
+          <!-- article text -->
           <h5 class="title font-times fs-4">A Unique View On The World</h5>
           <p class="mx-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, provident quam tempore animi iusto voluptas modi dignissimos impedit deleniti aut! Minima tenetur quo commodi et ipsam magnam, quos natus doloribus neque nostrum, illum, quo temporibus tempore porro quaerat!</p>
         </div>
-        <div>
+        <div class="mb-5 pt-2">
           <img src="../assets/globe-xsmall.png" alt="The Guardian logo">
           <div class="ms-4 d-inline-block text-secondary fw-bold  ">Mary Maxey, <span class="text-dark fw-normal">The Globe And Mail</span></div>
         </div>
@@ -58,11 +67,9 @@ export default {
 
 .critics-section{
   height: 1000px;
-  width: 75%;
   padding: 50px 0 100px 0;
 
   .critics-header{
-
     .title{
       font-weight: 600;
       font-size: 40px;
@@ -122,13 +129,11 @@ export default {
       }
     }
 
-
     .art2, .art3{
       width: 35%;
     }
 
     .article-content{
-      padding: 30px;
       background-color: $light-background;  
       
       .title{
@@ -141,7 +146,6 @@ export default {
       }
     }
   }
-  
 }
 
 </style>

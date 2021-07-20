@@ -1,16 +1,23 @@
 <template>
   <div class="section-articles">
     <div class="container">
+      
+      <!-- header -->
       <header class="d-flex align-items-center justify-content-between">
+        <!-- title -->
         <div>
           <h2 class="title font-times">Recent Articles</h2>
           <div class="subtitle text-uppercase">Read the latest entries</div>
         </div>
+        <!-- button -->
         <div>
           <button class="border-0 rounded text-white">All Articles</button>
         </div>
       </header>
+
+      <!-- articles section -->
       <div class="articles my-4">
+        <!-- first article -->
         <article class="art1 float-start p-4">
           <img class="w-100" src="../assets/20-Tips-scaled.jpg" alt="20 Tips book">
           <div class="article-text p-3">
@@ -21,7 +28,10 @@
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio in dignissimos sequi natus sunt? Possimus in consequatur pariatur nobis obcaecati?</p>
           </div>
         </article>
+        
+        <!-- aside column -->
         <aside class="float-start">
+          <!-- second article -->
           <article class="art2 p-4">
             <img class="w-100" src="../assets/thumb-13-2x-700x441.jpg" alt="20 Tips book">
             <div class="article-text mt-2">
@@ -31,6 +41,8 @@
               </div>
             </div>
           </article>
+          
+          <!-- third article -->
           <article class="art3 p-4">
             <img class="w-100" src="../assets/thumb-08-2x-700x441.jpg" alt="20 Tips book">
             <div class="article-text mt-2">
@@ -42,6 +54,7 @@
           </article>
         </aside>
       </div>
+
     </div>
   </div>
 </template>
@@ -114,7 +127,6 @@ export default {
         };
       }
 
-      
       .article-title{
         transition: 0.2s;
         cursor: pointer;

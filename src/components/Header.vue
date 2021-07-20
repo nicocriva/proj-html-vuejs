@@ -1,10 +1,12 @@
 <template>
   <header class="vh-100">
-    <div class="opacity-shadow">
+    <div class="opacity-shadow">      
+      <!-- header top -->
       <div class="header-top d-flex justify-content-between align-items-center">
         <div class="avada-logo h-100">
           <img class="h-100" src="../assets/author-logo-round.png" alt="avada logo">
         </div>
+        <!-- navigation menu -->
         <div class="header-nav">
           <ul class="list-unstyled">
             <li class="d-inline-block mx-3 mb-4" v-for="(item, index) in navBar" :key="index">
@@ -16,28 +18,30 @@
           </ul>
         </div>
       </div>
+      <!-- header bottom -->
       <div class="header-bottom w-100 position-relative">
         <div class="btm-left position-absolute">
+          <!-- main -->
           <h2 class="font-kristi">Damon Vaughn</h2>
-          <p class="quote text-light font-times">Best-selling author and the most influential public intellectual in the western world right now.</p>
-          <p class="quote-author">- The New York Times</p>
+          <p class="quote fw-bold text-light font-times">Best-selling author and the most influential public intellectual in the western world right now.</p>
+          <p class="quote-author fst-italic">- The New York Times</p>
           <div class="slider-buttons mt-4 text-light d-flex justify-content-center align-items-center">
             <div><i class="fas fa-arrow-left"></i></div>
             <div><i class="fas fa-arrow-right"></i></div>
           </div>
         </div>
+        <!-- latest book release -->
         <div class="btm-right position-absolute">
-          <img src="../assets/book-widget.png" class="float-start" alt="book">
+          <img src="../assets/book-widget.png" class="float-start w-50" alt="book">
           <div class="float-start w-50 mt-2">
             <div class="latest-book font-times mb-2 fs-4">Latest Book Release</div>
             <div class="latest-book-name color-yellow">D: VAUGHN AUTOBIOGRAPHY</div>
             <div class="latest-book-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae sit incidunt quasi nam.</div>
           </div>
+          <!-- latest book buttons -->
           <div class="buy-buttons rounded w-100">
-            <button class="w-50 float-start"> <i class="fab fa-amazon"></i> Buy On Amazon</button>
-            <button class="w-50 float-start"> <i class="fab fa-apple"></i> Buy On AppStore</button>
-            <!-- <div class="w-50 float-start">amazon</div>
-            <div class="w-50 float-start">apple</div> -->
+            <button class="w-50 float-start p-2"> <i class="fab fa-amazon"></i> Buy On Amazon</button>
+            <button class="w-50 float-start p-2"> <i class="fab fa-apple"></i> Buy On AppStore</button>
           </div>
         </div>
       </div>
@@ -50,7 +54,21 @@ export default {
   name: 'HelloWorld',
   data(){
     return{
-      navBar: ['Home', 'About', 'Testimonials', 'My Blog', 'Meetups', 'Shop', 'Contact Me']
+      counter: 0,
+      photos: [
+        '../assets/author-logo-round.png',
+        '../assets/event-07.png',
+        '../assets/hero-08.png',
+      ],
+      navBar: [
+        'Home',
+        'About', 
+        'Testimonials', 
+        'My Blog', 
+        'Meetups', 
+        'Shop', 
+        'Contact Me'
+      ]
     }
   }
 }
@@ -66,6 +84,7 @@ header{
   background-position: center;
   background-repeat:no-repeat;
 
+  // shadow on image
   .opacity-shadow{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
@@ -106,13 +125,11 @@ header{
 
         .quote{
           font-size: 35px;
-          font-weight: bold;
         }
 
         .quote-author{
           font-size: 20px;
           color: rgba(255, 255, 255, 0.5);
-          font-style: italic;
         }
 
         .slider-buttons{
@@ -126,7 +143,6 @@ header{
             margin-left: 1px;
             cursor: pointer;
             transition: 0.3s;
-
           }
 
           & div:active i{
@@ -156,11 +172,6 @@ header{
         bottom: 0;
         right: 0;
         background-color: rgb(255, 255, 255);
-        
-
-        & img{
-          width: 50%;
-        }
 
         .latest-book{
           font-weight: 600;
@@ -175,12 +186,11 @@ header{
         }
 
         .buy-buttons {
-          width: 100%;
-          line-height: 30px;
           display: table;
           clear: both;
           content: '';
-          box-shadow: 0 15px 100px #888888;
+          line-height: 30px;
+          box-shadow: 5px 10px 50px #b4b4b4;
 
           & button:first-child{
             border-radius: 5px 0 0 5px;
@@ -200,13 +210,11 @@ header{
           }
 
           & button {
-            padding: 5px;
             font-size: 13px;
             border: 1px solid rgba(112, 170, 112, 0.555);
             transition: 0.3s;
             background-color: #f1fdf9;
           }
-          
         }
       }
     }

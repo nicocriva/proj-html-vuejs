@@ -1,15 +1,21 @@
 <template>
+  
   <div class="damon-info d-flex flex-column align-items-center justify-content-center my-4">
+    
+    <!-- title -->
     <div class="title font-kristi">
       More About Damon Vaughn
     </div>
     <div class="info">
       Damon Vaughn is a professor of psychology at the University of Toronto, a clinical psychologist and the author of the multi-milon copy bestseller "The story of my life."
     </div>
+
+    <!-- button -->
     <div>
-      <a href="#"><button class="text-light rounded">Meet The Author</button></a>
+      <button class="border-0 my-4 text-white rounded">Meet The Author</button>
     </div>
   </div>
+
 </template>
 
 <script>
@@ -39,8 +45,6 @@ export default {
   button{
     font-size: 14px;
     font-weight: 600;
-    margin: 30px 0;
-    border: none;
     padding: 10px 15px;
     background-color: $title-tiffany;
     transition: 0.2s;

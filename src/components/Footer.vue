@@ -1,33 +1,47 @@
 <template>
+
+  <!-- footer -->
   <footer class="position-relative">
     <div class="container">
+
+      <!-- avada logo img -->
       <div class="float-start me-5">
         <img src="../assets/author-logo-round.png" alt="Avada logo">
       </div>
+
+      <!-- first column -->
       <div class="float-start w-25 pe-5 me-3">
         <div class="title font-times text-white fw-bold text-uppercase mb-3">About Me</div>
         <div class="about-me-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut fugiat, dignissimos quo delectus, accusantium soluta repudiandae natus, consectetur praesentium quasi tempore rerum reprehenderit. Rerum, ducimus.</div>
       </div>
+
+      <!-- second column -->
       <div class="float-start w-25 pe-5 me-3">
         <div class="title font-times text-white fw-bold text-uppercase mb-3">Useful Links</div>
         <div v-for="(item, index) in links" :key="index" class="link-list mb-2">
           <a :href="item.link" class="text-decoration-none"><i class="fas fa-chevron-right text-white me-2"></i> {{item.name}} </a>
         </div>
       </div>
+      <!-- third column -->
       <div class="float-start w-25 pe-5 me-3">
         <div class="title font-times text-white fw-bold text-uppercase mb-3">Contact Info</div>
         <div v-for="(item, index) in contacts" :key="index" class="link-list mb-2">
           <div>{{item.name}}</div>
         </div>
+
+        <!-- social media links -->
         <div v-for="item in social" :key="item.name" class="d-inline-block mx-1 social-icon">
           <a href="#"><i :class="item.name"></i></a>
         </div>
       </div>
     </div>
+
+    <!-- credits row -->
     <div class="credits w-100 text-center position-absolute">
       &copy; Copyright 2012 - 2021 | Avada Theme by <strong class="text-white">ThemeFusion</strong> | All Rights Reserved | Powered by <strong class="text-white">WordPress</strong>
     </div>
   </footer>
+  
 </template>
 
 <script>
@@ -137,6 +151,7 @@ footer{
         }
       }
     }
+
     .social-icon a{
       color: rgba(255, 255, 255, 0.7);
       font-size: 18px;
@@ -150,6 +165,7 @@ footer{
       }
     }
   }
+
   .credits{
     color: rgba(255, 255, 255, 0.7);
     bottom: 30px;

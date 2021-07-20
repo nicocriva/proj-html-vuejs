@@ -1,8 +1,14 @@
 <template>
   <div class="works-section container p-5">
+
+    <!-- title -->
     <div class="title font-times text-center fw-bold mt-2">Dig A Little Deeper Into Damon Vaughn</div>
     <div class="subtitle text-center text-uppercase pb-5">Find more about the author himself</div>
+
+    <!-- info section -->
     <div class="info mb-4 px-5">
+
+      <!-- first info-box -->
       <div class="about d-inline-block position-relative">
         <div class="info-shadow w-100 h-100">
           <div class="info-text w-100 text-center position-absolute">
@@ -12,6 +18,8 @@
           </div>
         </div>
       </div>
+
+      <!-- second info-box -->
       <div class="latest-book d-inline-block position-relative">
         <div class="info-shadow w-100 h-100">
           <div class="info-text w-100 text-center position-absolute">
@@ -21,6 +29,8 @@
           </div>
         </div>
       </div>
+      
+      <!-- third info-box -->
       <div class="book-signing d-inline-block position-relative">
         <div class="info-shadow w-100 h-100">
           <div class="info-text w-100 text-center position-absolute">
@@ -30,7 +40,9 @@
           </div>
         </div>
       </div>
+
     </div>
+
   </div>
 </template>
 
@@ -56,7 +68,6 @@ export default {
   }
 
   .info{
-
     .about, .latest-book, .book-signing{
       width: calc((100% / 3) - 40px);
       height: 400px;

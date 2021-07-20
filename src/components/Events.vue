@@ -1,41 +1,45 @@
 <template>
   <div class="events-section">
     <div class="container py-5">
+      <!-- title -->
       <div class="section-top text-center">
-        <div class="title font-times mb-2">Upcoming Events</div>
+        <div class="title fw-bold font-times mb-2">Upcoming Events</div>
         <div class="subtitle text-uppercase mb-4">Meet the author in person</div>
       </div>
-      <div class="events">
-        <div class="event text-center">
+      <!-- events section -->
+      <div class="events mb-5">
+        <!-- first event -->
+        <div class="event float-start text-center">
           <div class="img-shadow position-relative">
             <img class="w-100" src="../assets/event-05.jpg" alt="#">
             <div class="green-shadow position-absolute w-100 h-100"></div>
           </div>
-          <div class="fs-5 py-4">Chicago Book Signing</div>
-          <hr>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt laborum facere voluptates vel, dolores autem.</p>
+          <div class="event-name fs-4 pt-4 pb-1">Chicago Book Signing</div>
+          <hr class="mx-4">
+          <p class="m-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt laborum facere voluptates vel, dolores autem.</p>
         </div>
-        <div class="event text-center">
+        <!-- second event -->
+        <div class="event float-start text-center">
           <div class="img-shadow position-relative">
             <img class="w-100" src="../assets/event-04.jpg" alt="#">
             <div class="green-shadow position-absolute w-100 h-100"></div>
           </div>
-          <div class="fs-5 py-4">Chicago Book Signing</div>
-          <hr>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt laborum facere voluptates vel, dolores autem.</p>
+          <div class="event-name fs-4 pt-4 pb-1">Meet &amp; Greet With Amanda</div>
+          <hr class="mx-4">
+          <p class="m-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt laborum facere voluptates vel, dolores autem.</p>
         </div>
-        <div class="event text-center">
+        <!-- third event -->
+        <div class="event float-start text-center">
           <div class="img-shadow position-relative">
             <img class="w-100" src="../assets/event-07.jpg" alt="#">
             <div class="green-shadow position-absolute w-100 h-100"></div>
           </div>
-          <div class="fs-5 py-4">Chicago Book Signing</div>
-          <hr>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt laborum facere voluptates vel, dolores autem.</p>
+          <div class="event-name fs-4 pt-4 pb-1">Open Book: Dialogues</div>
+          <hr class="mx-4">
+          <p class="m-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt laborum facere voluptates vel, dolores autem.</p>
         </div>
-        
       </div>
-      </div>
+    </div>
   </div>
 </template>
 
@@ -55,7 +59,6 @@ export default {
     .section-top {
       .title{
         font-size: 35px;
-        font-weight: bold;
       }
 
       .subtitle{
@@ -66,7 +69,6 @@ export default {
     }
 
     .events{
-      width: 100%;
       display: table;
       content: '';
       clear: both;
@@ -74,33 +76,44 @@ export default {
       .event{
         width: calc((100% / 3) - 40px);
         margin: 0 20px;
-        float: left;
         background-color: white;
 
         .img-shadow{
           cursor: pointer;
+          transition: 0.3s;
+
+          img{
+            transition: 0.3s;
+          }
 
           &:hover .green-shadow{
-            display: block; 
+            background-image: linear-gradient(rgba(239, 247, 233, 0.3), rgba(37, 107, 80, 0.4));
+            transition: 0.3s;
           }
 
           .green-shadow{
-            background-image: linear-gradient(rgba(239, 247, 233, 0.5), rgba(37, 107, 80, 0.6));
             top: 0;
             left: 0;
-            display: none;
+            transition: 0.3s;
           }
         }
-        
+
+        .event-name{
+          transition: 0.5s;
+          cursor: pointer;
+
+          &:hover{
+            color: $title-yellow;
+            text-shadow: 0 10px 30px rgba(90, 90, 90, 0.5);
+          }
+        }
 
         hr{
-          opacity: 0.1;
-          margin: 0 20px;
+          opacity: 0.15;
         }
 
         p{
           color: rgba(0, 0, 0, 0.75);
-          margin: 20px;
           margin-bottom: 50px;
         }
       }
