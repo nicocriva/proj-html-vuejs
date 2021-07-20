@@ -60,8 +60,6 @@ export default {
   padding: 80px 210px;
   
   .container{
-    
-    
     header{
       .title{
         font-weight: 600;

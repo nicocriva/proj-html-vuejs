@@ -3,7 +3,7 @@
     <div class="opacity-shadow">
       <div class="header-top d-flex justify-content-between align-items-center">
         <div class="avada-logo h-100">
-          <img class="h-100" src="../assets/author-logo-round.png" alt="">
+          <img class="h-100" src="../assets/author-logo-round.png" alt="avada logo">
         </div>
         <div class="header-nav">
           <ul class="list-unstyled">
