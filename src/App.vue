@@ -8,7 +8,7 @@
       <Critics/>
       <Events/>
       <JumbotronSubscribe/>
-      <OtherWorksOfDamon/>
+      <OtherInfoOfDamon/>
       <RecentArticles/>
     </main>
     <Footer/>
@@ -23,7 +23,7 @@ import JumbotronAudiobook from './components/JumbotronAudiobook.vue'
 import Critics from './components/Critics.vue'
 import Events from './components/Events.vue'
 import JumbotronSubscribe from './components/JumbotronSubscribe.vue'
-import OtherWorksOfDamon from './components/OtherWorksOfDamon.vue'
+import OtherInfoOfDamon from './components/OtherInfoOfDamon.vue'
 import RecentArticles from './components/RecentArticles.vue'
 import Footer from './components/Footer.vue'
 
@@ -37,7 +37,7 @@ export default {
     Critics,
     Events,
     JumbotronSubscribe,
-    OtherWorksOfDamon,
+    OtherInfoOfDamon,
     RecentArticles,
     Footer
   }

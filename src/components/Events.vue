@@ -85,7 +85,7 @@ export default {
           }
 
           .green-shadow{
-            background-image: linear-gradient(rgba(239, 247, 233, 0.5), rgba(37, 107, 80, 0.6));;
+            background-image: linear-gradient(rgba(239, 247, 233, 0.5), rgba(37, 107, 80, 0.6));
             top: 0;
             left: 0;
             display: none;
