@@ -9,35 +9,38 @@
     <div class="info mb-4 px-5">
 
       <!-- first info-box -->
-      <div class="about d-inline-block position-relative">
-        <div class="info-shadow w-100 h-100">
-          <div class="info-text w-100 text-center position-absolute">
-            <div class="text-white fs-3">About Me</div>
-            <hr class="position-relative text-white">
-            <div>Vestibulum ante ipsum primis</div>
-          </div>
+      <div class="no-scale-box position-relative d-inline-block">
+        <div class="about w-100 h-100">
+          <div class="info-shadow w-100 h-100"></div>
+        </div>
+        <div class="info-text text-white w-75 text-center">
+          <div class="fs-3">About Me</div>
+          <hr class="position-relative">
+          <div>Vestibulum ante ipsum primis</div>
         </div>
       </div>
 
       <!-- second info-box -->
-      <div class="latest-book d-inline-block position-relative">
-        <div class="info-shadow w-100 h-100">
-          <div class="info-text w-100 text-center position-absolute">
-            <div class="text-white fs-3">My Latest Book</div>
-            <hr class="position-relative text-white">
-            <div>Vestibulum ante ipsum primis</div>
-          </div>
+      <div class="no-scale-box position-relative d-inline-block">
+        <div class="latest-book w-100 h-100">
+          <div class="info-shadow w-100 h-100"></div>
+        </div>
+        <div class="info-text text-white w-75 text-center">
+          <div class="fs-3">My Latest Book</div>
+          <hr class="position-relative">
+          <div>Vestibulum ante ipsum primis</div>
         </div>
       </div>
-      
+
       <!-- third info-box -->
-      <div class="book-signing d-inline-block position-relative">
-        <div class="info-shadow w-100 h-100">
-          <div class="info-text w-100 text-center position-absolute">
-            <div class="text-white fs-3">Book Signing</div>
-            <hr class="position-relative text-white">
-            <div>Vestibulum ante ipsum primis</div>
-          </div>
+      <div class="no-scale-box position-relative d-inline-block">
+        <div class="book-signing w-100 h-100">
+          <div class="info-shadow w-100 h-100"></div>
+        </div>
+        <div class="info-text text-white w-75 text-center">
+          <div class="fs-3">Book Signing</div>
+          <hr class="position-relative">
+          <div>Vestibulum ante ipsum primis</div>
         </div>
       </div>
 
@@ -68,12 +71,16 @@ export default {
   }
 
   .info{
-    .about, .latest-book, .book-signing{
+
+    .no-scale-box{
       width: calc((100% / 3) - 40px);
       height: 400px;
       margin: 0 20px;
+    }
+    
+    .about, .latest-book, .book-signing{
       background-size: cover;
-      background-position: center;
+      background-position: left;
       border-radius: 0 0 40px 0;
       transition: 0.3s;
       cursor: pointer;
@@ -94,28 +101,29 @@ export default {
       background-image: url('../assets/box-3.jpg');
     }
       
-      .info-shadow{
-        background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.6));
-        border-radius: 0 0 40px 0;
+    .info-shadow{
+      background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.6));
+      border-radius: 0 0 40px 0;
+    }
 
-        .info-text{
-          bottom: 40px;
-          left: 50%;
-          transform: translate(-50%);
+    .info-text{
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translate(-50%);
 
-          hr{
-            width: 50px;
-            height: 2px;
-            left: 50%;
-            transform: translate(-50%)
-          }
-
-          div:last-child{
-            color: $title-yellow;
-            font-size: 18px;
-          }
-        }
+      hr{
+        width: 50px;
+        height: 1.5px;
+        left: 50%;
+        transform: translate(-50%)
       }
+
+      div:last-child{
+        color: $title-yellow;
+        font-size: 18px;
+      }
+    }
   }
 }
 
