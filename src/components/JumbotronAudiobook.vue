@@ -1,12 +1,18 @@
 <template>
   <div class="jumbo-book">
-    <div class="container h-100 d-flex align-items-center">
+    <div class="container h-100 d-flex overflow-hidden align-items-center">
       <!-- phone image -->
-      <div class="phone-img w-50 h-100">
+      <div class="phone-img w-50 h-100"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          data-aos-offset="400">
         <img class="h-100 pt-5" src="../assets/audible-app-2x.png" alt="Audible app">
       </div>
       <!-- jumbo text -->
-      <div class="new-audiobook text-center">
+      <div class="new-audiobook text-center"
+          data-aos="fade-left"
+          data-aos-duration="1500"
+          data-aos-offset="300">
         <h2 class="title text-light font-times">New Audiobook</h2>
         <div class="subtitle text-uppercase">No time to read? No problem, listen to it</div>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, excepturi ratione odio?</p>

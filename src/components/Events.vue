@@ -1,6 +1,9 @@
 <template>
   <div class="events-section">
-    <div class="container py-5">
+    <div class="container py-5"
+        data-aos="fade"
+        data-aos-duration="1000"
+        data-aos-offset="200">
       <!-- title -->
       <div class="section-top text-center">
         <div class="title fw-bold font-times mb-2">Upcoming Events</div>

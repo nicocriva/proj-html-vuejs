@@ -1,7 +1,10 @@
 <template>
   <div class="critics-section w-75 container px-4 overflow-hidden">
 
-    <div class="critics-header d-flex align-items-center justify-content-between">
+    <div class="critics-header d-flex align-items-center justify-content-between"
+        data-aos="fade-down"
+        data-aos-duration="1000"
+        data-aos-offset="200">
       <div>
         <!-- title -->
         <h2 class="title font-times">What The Critics Say</h2>
@@ -14,7 +17,10 @@
     </div>
 
     <!-- articles section -->
-    <div class="articles mt-4">
+    <div class="articles mt-4"
+        data-aos="fade-left"
+        data-aos-duration="1000"
+        data-aos-offset="200">
 
       <!-- first article -->
       <div class="no-scale-box float-start position-relative">

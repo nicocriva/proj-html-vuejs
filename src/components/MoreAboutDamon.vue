@@ -1,6 +1,9 @@
 <template>
   
-  <div class="damon-info d-flex flex-column align-items-center justify-content-center my-4">
+  <div class="damon-info d-flex flex-column align-items-center justify-content-center my-4"
+      data-aos="fade-down"
+      data-aos-duration="1500"
+      data-aos-offset="200">
     
     <!-- title -->
     <div class="title font-kristi">

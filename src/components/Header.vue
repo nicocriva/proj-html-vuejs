@@ -19,19 +19,25 @@
         </div>
       </div>
       <!-- header bottom -->
-      <div class="header-bottom w-100 position-relative">
-        <div class="btm-left position-absolute">
+      <div class="header-bottom w-100 position-relative overflow-hidden">
+        <div class="btm-left position-absolute"
+            data-aos="fade-right" 
+            data-aos-duration="1500"
+            data-aos-delay="300">
           <!-- main -->
           <h2 class="font-kristi">Damon Vaughn</h2>
           <p class="quote fw-bold text-light font-times">Best-selling author and the most influential public intellectual in the western world right now.</p>
           <p class="quote-author fst-italic">- The New York Times</p>
-          <div class="slider-buttons mt-4 text-light d-flex justify-content-center align-items-center">
+          <!-- <div class="slider-buttons mt-4 text-light d-flex justify-content-center align-items-center">
             <div><i class="fas fa-arrow-left"></i></div>
             <div><i class="fas fa-arrow-right"></i></div>
-          </div>
+          </div> -->
         </div>
         <!-- latest book release -->
-        <div class="btm-right position-absolute">
+        <div class="btm-right position-absolute"
+            data-aos="fade-up-left" 
+            data-aos-duration="1500"
+            data-aos-delay="300">
           <img src="../assets/book-widget.png" class="float-start w-50" alt="book">
           <div class="float-start w-50 mt-2">
             <div class="latest-book font-times mb-2 fs-4">Latest Book Release</div>
@@ -50,6 +56,10 @@
 </template>
 
 <script>
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
+
 export default {
   name: 'HelloWorld',
   data(){
@@ -70,7 +80,8 @@ export default {
         'Contact Me'
       ]
     }
-  }
+  },
+  
 }
 </script>
 
@@ -115,7 +126,7 @@ header{
       .btm-left{
         width: 600px;
         height: 400px;
-        bottom: 100px;
+        bottom: 50px;
         left: 150px;
 
         h2{

@@ -3,7 +3,10 @@
     <div class="container">
       
       <!-- header -->
-      <header class="d-flex align-items-center justify-content-between">
+      <header class="d-flex align-items-center justify-content-between"
+              data-aos="fade-down"
+              data-aos-duration="1000"
+              data-aos-offset="200">
         <!-- title -->
         <div>
           <h2 class="title font-times">Recent Articles</h2>
@@ -18,7 +21,10 @@
       <!-- articles section -->
       <div class="articles my-4">
         <!-- first article -->
-        <article class="art1 float-start p-4">
+        <article class="art1 float-start p-4"
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                  data-aos-offset="100">
           <div class="overflow-hidden">
             <img class="w-100" src="../assets/20-Tips-scaled.jpg" alt="20 Tips book">
           </div>
@@ -32,7 +38,10 @@
         </article>
         
         <!-- aside column -->
-        <aside class="float-start">
+        <aside class="float-start"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-offset="100">
           <!-- second article -->
           <article class="art2 p-4">
             <div class="overflow-hidden">

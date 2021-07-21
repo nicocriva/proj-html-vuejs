@@ -2,7 +2,10 @@
   <div class="jumbo-sub text-center">
     <!-- dark jumbo shadow  -->
     <div class="jumbo-shadow">
-      <div class="container py-5">
+      <div class="container py-5"
+          data-aos="fade"
+          data-aos-duration="1000"
+          data-aos-offset="300">
         <!-- title -->
         <div class="title font-times pt-1 mt-4 text-white">
           Subscribe To My Newsletter

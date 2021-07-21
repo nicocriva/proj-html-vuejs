@@ -2,14 +2,21 @@
   <div class="works-section container p-5">
 
     <!-- title -->
-    <div class="title font-times text-center fw-bold mt-2">Dig A Little Deeper Into Damon Vaughn</div>
-    <div class="subtitle text-center text-uppercase pb-5">Find more about the author himself</div>
+    <div data-aos="fade-down"
+         data-aos-duration="1000"
+         data-aos-offset="200">
+      <div class="title font-times text-center fw-bold mt-2">Dig A Little Deeper Into Damon Vaughn</div>
+      <div class="subtitle text-center text-uppercase pb-5">Find more about the author himself</div>
+    </div>
 
     <!-- info section -->
     <div class="info mb-4 px-5">
 
       <!-- first info-box -->
-      <div class="no-scale-box position-relative d-inline-block">
+      <div class="no-scale-box position-relative d-inline-block"
+           data-aos="fade-up-right"
+           data-aos-duration="1500"
+           data-aos-offset="300">
         <div class="about w-100 h-100">
           <div class="info-shadow w-100 h-100"></div>
         </div>
@@ -21,7 +28,10 @@
       </div>
 
       <!-- second info-box -->
-      <div class="no-scale-box position-relative d-inline-block">
+      <div class="no-scale-box position-relative d-inline-block z-index-3"
+           data-aos="fade-up"
+           data-aos-duration="1500"
+           data-aos-offset="300">
         <div class="latest-book w-100 h-100">
           <div class="info-shadow w-100 h-100"></div>
         </div>
@@ -33,7 +43,10 @@
       </div>
 
       <!-- third info-box -->
-      <div class="no-scale-box position-relative d-inline-block">
+      <div class="no-scale-box position-relative d-inline-block"
+           data-aos="fade-up-left"
+           data-aos-duration="1500"
+           data-aos-offset="300">
         <div class="book-signing w-100 h-100">
           <div class="info-shadow w-100 h-100"></div>
         </div>
