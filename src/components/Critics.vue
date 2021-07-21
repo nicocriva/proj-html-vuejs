@@ -1,5 +1,6 @@
 <template>
   <div class="critics-section w-75 container px-4 overflow-hidden">
+
     <div class="critics-header d-flex align-items-center justify-content-between">
       <div>
         <!-- title -->
@@ -11,12 +12,20 @@
         <button class="border-0 rounded text-white">Read All Testimonial</button>
       </div>
     </div>
+
     <!-- articles section -->
     <div class="articles mt-4">
+
       <!-- first article -->
-      <article class="art1 float-start text-white">
-        <div class="img-shadow w-100 h-100">
-          <!-- article text -->
+      <div class="no-scale-box float-start position-relative">
+        <div class="art1">
+          <div class="img-shadow w-100 h-100">
+            <!-- article text -->
+          </div>
+        </div>
+
+        <div class="art-text position-absolute text-white w-100">
+
           <h2 class="title font-times text-bold"> Best Author Of His Generation </h2>
           <hr>
           <h5 class="subtitle my-4">This book will change yoru perspective on life</h5>
@@ -26,8 +35,10 @@
             <img class="d-inline-block me-3" src="../assets/nytimes-logo-white-xsmall.png" alt="New York Times logo">
             <div class="d-inline-block">Justine Kilpatrick, <span class="article-author">The New York Times</span></div>
           </div>
+
         </div>
-      </article>
+      </div>
+
       <!-- second article -->
       <article class="art2 float-end">
         <div class="article-content p-4 text-center mb-2">
@@ -40,6 +51,7 @@
           <div class="ms-4 d-inline-block text-secondary fw-bold  ">Gerald Hendley, <span class="text-dark fw-normal">The Guardian</span></div>
         </div>
       </article>
+
       <!-- third article -->
       <article class="art3 mt-2 float-end">
         <div class="article-content p-4 text-center mb-2">
@@ -52,7 +64,9 @@
           <div class="ms-4 d-inline-block text-secondary fw-bold  ">Mary Maxey, <span class="text-dark fw-normal">The Globe And Mail</span></div>
         </div>
       </article>
+
     </div>
+
   </div>
 </template>
 
@@ -66,7 +80,6 @@ export default {
 @import '../style/vars.scss';
 
 .critics-section{
-  height: 1000px;
   padding: 50px 0 100px 0;
 
   .critics-header{
@@ -94,25 +107,40 @@ export default {
   }
 
   .articles{
-    height: calc(100% - 100px);
+    display: table;
+    content: '';
+    clear: both;
+    height: 900px;
 
-    .art1{
+    .no-scale-box{
+      height: 750px;
       width: 60%;
-      height: 90%;
-      background-image: url('../assets/testimonial2-2x.jpg');
-      background-size: cover;
-      border-radius: 0 0 80px 0;
-      transition: 0.3s;
+      cursor: pointer;
 
-      &:hover{
+      &:hover .art1{
         transform: scale(1.03);
+      }
+
+      .art1{
+        width: 100%;
+        height: 90%;
+        background-image: url('../assets/testimonial2-2x.jpg');
+        background-size: cover;
+        border-radius: 0 0 80px 0;
+        transition: 0.3s;
       }
 
       .img-shadow{
         background-color: rgba(0, 0, 0, 0.2);
         border-radius: 0 0 80px 0;
         padding: 90px;
-        
+      }
+          
+      .art-text{
+        padding: 70px 100px;
+        top: 43%;
+        transform: translate(-0%, -50%);
+
         .title{
           font-weight: 600;
           font-size: 40px;
@@ -122,7 +150,7 @@ export default {
           opacity: 0.5;
           margin: 30px 0;
         }
-
+  
         .article-author{
           color: $title-tiffany;
         }

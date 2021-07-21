@@ -76,6 +76,16 @@ export default {
       width: calc((100% / 3) - 40px);
       height: 400px;
       margin: 0 20px;
+
+      &:hover .about{
+        transform: scale(1.03);
+      }
+      &:hover .latest-book{
+        transform: scale(1.03);
+      }
+      &:hover .book-signing{
+        transform: scale(1.03);
+      }
     }
     
     .about, .latest-book, .book-signing{
@@ -86,7 +96,6 @@ export default {
       cursor: pointer;
 
       &:hover{
-        transform: scale(1.03);
         box-shadow: 5px 10px 25px rgb(146, 146, 146);
       }
     }
@@ -107,6 +116,7 @@ export default {
     }
 
     .info-text{
+      cursor: pointer;
       position: absolute;
       bottom: 40px;
       left: 50%;
