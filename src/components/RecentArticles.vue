@@ -19,7 +19,9 @@
       <div class="articles my-4">
         <!-- first article -->
         <article class="art1 float-start p-4">
-          <img class="w-100" src="../assets/20-Tips-scaled.jpg" alt="20 Tips book">
+          <div class="overflow-hidden">
+            <img class="w-100" src="../assets/20-Tips-scaled.jpg" alt="20 Tips book">
+          </div>
           <div class="article-text p-3">
             <div class="article-title mt-2 fs-5">20 Creativity Tips</div>
               <div class="author">
@@ -33,7 +35,9 @@
         <aside class="float-start">
           <!-- second article -->
           <article class="art2 p-4">
-            <img class="w-100" src="../assets/thumb-13-2x-700x441.jpg" alt="20 Tips book">
+            <div class="overflow-hidden">
+              <img class="w-100" src="../assets/thumb-13-2x-700x441.jpg" alt="20 Tips book">
+            </div>
             <div class="article-text mt-2">
               <div class="article-title fs-5">What's On Your Booklist?</div>
               <div class="author">
@@ -44,7 +48,9 @@
           
           <!-- third article -->
           <article class="art3 p-4">
-            <img class="w-100" src="../assets/thumb-08-2x-700x441.jpg" alt="20 Tips book">
+            <div class="overflow-hidden">
+              <img class="w-100" src="../assets/thumb-08-2x-700x441.jpg" alt="20 Tips book">
+            </div>
             <div class="article-text mt-2">
               <div class="article-title fs-5">Istanbul Travel Guide</div>
               <div class="author">
@@ -118,12 +124,11 @@ export default {
       }
 
       img{
-        transition: 0.5s;
+        transition: 0.5s ease-out;
+        cursor: pointer;
                 
         &:hover{
-          z-index: -1;
-          overflow: hidden;
-          transform: scale(1.05)
+          transform: scale(1.1)
         };
       }
 
