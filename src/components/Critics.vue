@@ -33,7 +33,7 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quaerat sint temporibus reprehenderit est sequi eum reiciendis eius ad excepturi? Facere ad id quod? Necessitatibus!</p>
           <div class="mt-5">
             <img class="d-inline-block me-3" src="../assets/nytimes-logo-white-xsmall.png" alt="New York Times logo">
-            <div class="d-inline-block">Justine Kilpatrick, <span class="article-author">The New York Times</span></div>
+            <div class="d-inline-block light-bold">Justine Kilpatrick, <span class="article-author">The New York Times</span></div>
           </div>
 
         </div>
@@ -80,7 +80,7 @@ export default {
 @import '../style/vars.scss';
 
 .critics-section{
-  padding: 50px 0 100px 0;
+  padding: 50px 0 50px 0;
 
   .critics-header{
     .title{
@@ -110,10 +110,10 @@ export default {
     display: table;
     content: '';
     clear: both;
-    height: 900px;
+    height: 600px;
 
     .no-scale-box{
-      height: 750px;
+      height: 700px;
       width: 60%;
       cursor: pointer;
 
@@ -123,7 +123,7 @@ export default {
 
       .art1{
         width: 100%;
-        height: 90%;
+        height: 100%;
         background-image: url('../assets/testimonial2-2x.jpg');
         background-size: cover;
         border-radius: 0 0 80px 0;
@@ -138,7 +138,7 @@ export default {
           
       .art-text{
         padding: 70px 100px;
-        top: 43%;
+        top: 50%;
         transform: translate(-0%, -50%);
 
         .title{
@@ -151,8 +151,12 @@ export default {
           margin: 30px 0;
         }
   
-        .article-author{
-          color: $title-tiffany;
+        .light-bold{
+          font-weight: 600;
+         
+          .article-author{
+            color: $title-tiffany;
+          }
         }
       }
     }
