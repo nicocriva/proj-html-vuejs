@@ -87,7 +87,7 @@ export default {
           }
 
           &:hover .green-shadow{
-            background-image: linear-gradient(rgba(239, 247, 233, 0.3), rgba(37, 107, 80, 0.4));
+            background-image: linear-gradient(rgba(239, 247, 233, 0.2), rgba(37, 107, 80, 0.3));
             transition: 0.3s;
           }
 

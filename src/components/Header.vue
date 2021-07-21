@@ -39,7 +39,7 @@
             <div class="latest-book-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae sit incidunt quasi nam.</div>
           </div>
           <!-- latest book buttons -->
-          <div class="buy-buttons rounded w-100">
+          <div class="buy-buttons rounded">
             <button class="w-50 float-start p-2"> <i class="fab fa-amazon"></i> Buy On Amazon</button>
             <button class="w-50 float-start p-2"> <i class="fab fa-apple"></i> Buy On AppStore</button>
           </div>
@@ -135,6 +135,8 @@ header{
         .slider-buttons{
           width: 80px;
           height: 35px;
+          transition: 0.3s;
+          
 
           & div{
             background-color: rgba(0, 0, 0, 0.4);
@@ -142,12 +144,14 @@ header{
             padding: 10px 15px;
             margin-left: 1px;
             cursor: pointer;
-            transition: 0.3s;
           }
 
+          i{
+            transition: 0.1s;
+          }
+          
           & div:active i{
             transform: scale(1.3);
-            transition: 0.1s;
           }
 
           & div:hover{
@@ -186,34 +190,31 @@ header{
         }
 
         .buy-buttons {
+          width: 101%;
           display: table;
           clear: both;
           content: '';
           line-height: 30px;
-          box-shadow: 5px 10px 50px #b4b4b4;
-
-          & button:first-child{
-            border-radius: 5px 0 0 5px;
-
-            &:hover{
-              border: 1px solid rgb(92, 214, 92);
-              background-color: white;
-            }
-          }
-
-          & button:last-child{
-            border-radius: 0 5px 5px 0;
-
-            &:hover{
-              border: 1px solid rgb(92, 214, 92);
-            }
-          }
+          box-shadow: 0 5px 20px #d6d6d6a2;
 
           & button {
             font-size: 13px;
             border: 1px solid rgba(112, 170, 112, 0.555);
             transition: 0.3s;
             background-color: #f1fdf9;
+
+            &:hover{
+              border: 1px solid rgb(92, 214, 92);
+              background-color: white;
+            }
+
+            &:first-child{
+              border-radius: 5px 0 0 5px;
+            }
+
+            &:last-child{
+              border-radius: 0 5px 5px 0;
+            }
           }
         }
       }
